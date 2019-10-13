@@ -7,44 +7,63 @@
             allPopups="false"
             locationURI="menu:help?after=com.sap.ide.support.ui.createSupportInfo">
          <separator
-               name="com.stockbal.adtextensions.sep1"
+               name="com.devepos.adt.extensions.sep1"
                visible="true">
          </separator>
          <command
-               commandId="com.stockbal.adtextensions.clearDiscoveryCache"
+               commandId="com.devepos.adt.extensions.clearDiscoveryCache"
                icon="icons/ClearAdtCache.png"
                label="%command.clearDiscoveryCache.name"
                mnemonic="l"
                style="push">
          </command>
          <separator
-               name="com.stockbal.adtextensions.sep2"
+               name="com.devepos.adt.extensions.sep2"
                visible="true">
          </separator>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:com.sap.adt.ris.search.ui.toolbar">
+         <command
+               commandId="com.devepos.adt.extensions.runWhereUsed"
+               icon="icons/RunWhereUsed.png"
+               label="%command.runWhereUsedQuery.name"
+               style="push">
+         </command>
       </menuContribution>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
       <handler
             class="com.devepos.adt.extensions.internal.handler.ClearAdtDiscoveryCacheHandler"
-            commandId="com.stockbal.adtextensions.clearDiscoveryCache">
+            commandId="com.devepos.adt.extensions.clearDiscoveryCache">
          <enabledWhen>
             <reference
                   definitionId="com.sap.adt.project.ui.adtActive">
             </reference>
          </enabledWhen>
       </handler>
+      <handler
+            class="com.devepos.adt.extensions.internal.handler.RunWhereUsedQueryHandler"
+            commandId="com.devepos.adt.extensions.runWhereUsed">
+      </handler>
    </extension>
    <extension
          point="org.eclipse.ui.commands">
       <category
-            id="com.stockbal.adtextensions"
+            id="com.devepos.adt.extensions"
             name="%category.name">
       </category>
       <command
-            categoryId="com.stockbal.adtextensions"
-            id="com.stockbal.adtextensions.clearDiscoveryCache"
+            categoryId="com.devepos.adt.extensions"
+            id="com.devepos.adt.extensions.clearDiscoveryCache"
             name="%command.clearDiscoveryCache.name">
+      </command>
+      <command
+            categoryId="com.devepos.adt.extensions"
+            id="com.devepos.adt.extensions.runWhereUsed"
+            name="%command.runWhereUsedQuery.name">
       </command>
    </extension>
 
