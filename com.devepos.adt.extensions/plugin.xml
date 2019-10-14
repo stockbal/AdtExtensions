@@ -30,6 +30,9 @@
                icon="icons/RunWhereUsed.png"
                label="%command.runWhereUsedQuery.name"
                style="push">
+            <visibleWhen
+                  checkEnabled="true">
+            </visibleWhen>
          </command>
       </menuContribution>
    </extension>
@@ -40,13 +43,18 @@
             commandId="com.devepos.adt.extensions.clearDiscoveryCache">
          <enabledWhen>
             <reference
-                  definitionId="com.sap.adt.project.ui.adtActive">
+                  definitionId="com.sap.adt.tools.core.ui.toolsActive">
             </reference>
          </enabledWhen>
       </handler>
       <handler
             class="com.devepos.adt.extensions.internal.handler.RunWhereUsedQueryHandler"
             commandId="com.devepos.adt.extensions.runWhereUsed">
+         <enabledWhen>
+            <reference
+                  definitionId="com.sap.adt.tools.core.ui.toolsActive">
+            </reference>
+         </enabledWhen>
       </handler>
    </extension>
    <extension
