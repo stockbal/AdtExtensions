@@ -9,6 +9,7 @@ import org.eclipse.core.resources.IProject;
 import org.eclipse.search.ui.NewSearchUI;
 import org.eclipse.ui.PlatformUI;
 
+import com.devepos.adt.extensions.internal.messages.Messages;
 import com.sap.adt.ris.search.ui.AdtRepositorySearchServiceUIFactory;
 import com.sap.adt.ris.search.ui.IAdtRepositorySearchServiceUIParameters;
 import com.sap.adt.ris.search.ui.IAdtRepositorySearchServiceUIResult;
@@ -29,6 +30,7 @@ public class RunWhereUsedQueryHandler extends AbstractHandler {
 		// open search dialog to choose ABAP Development object
 		final IAdtRepositorySearchServiceUIParameters parameters = AdtRepositorySearchServiceUIFactory
 			.createAdtRepositorySearchServiceUIParameters();
+		parameters.setTitle(Messages.RunWhereUsedQueryHandler_openObjectDialog_xtit);
 		final IAdtRepositorySearchServiceUIResult result = AdtRepositorySearchServiceUIFactory
 			.createAdtRepositorySearchServiceUI()
 			.openDialog(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), parameters);
