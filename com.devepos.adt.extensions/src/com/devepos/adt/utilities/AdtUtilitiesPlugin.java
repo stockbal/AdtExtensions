@@ -1,4 +1,4 @@
-package com.devepos.adt.extensions;
+package com.devepos.adt.utilities;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
@@ -6,18 +6,18 @@ import org.osgi.framework.BundleContext;
 /**
  * The activator class controls the plug-in life cycle
  */
-public class AdtExtensionsPlugin extends AbstractUIPlugin {
+public class AdtUtilitiesPlugin extends AbstractUIPlugin {
 
 	// The plug-in ID
 	public static final String PLUGIN_ID = "com.devepos.adt.extensions"; //$NON-NLS-1$
 
 	// The shared instance
-	private static AdtExtensionsPlugin plugin;
+	private static AdtUtilitiesPlugin plugin;
 	
 	/**
 	 * The constructor
 	 */
-	public AdtExtensionsPlugin() {
+	public AdtUtilitiesPlugin() {
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class AdtExtensionsPlugin extends AbstractUIPlugin {
 	 *
 	 * @return the shared instance
 	 */
-	public static AdtExtensionsPlugin getDefault() {
+	public static AdtUtilitiesPlugin getDefault() {
 		return plugin;
 	}
 

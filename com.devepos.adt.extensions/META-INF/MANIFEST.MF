@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
-Bundle-SymbolicName: com.devepos.adt.extensions;singleton:=true
-Bundle-Version: 1.1.0.qualifier
-Bundle-Activator: com.devepos.adt.extensions.AdtExtensionsPlugin
+Bundle-SymbolicName: com.devepos.adt.utilities;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.devepos.adt.utilities.AdtUtilitiesPlugin
 Bundle-Vendor: %Bundle-Vendor
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,

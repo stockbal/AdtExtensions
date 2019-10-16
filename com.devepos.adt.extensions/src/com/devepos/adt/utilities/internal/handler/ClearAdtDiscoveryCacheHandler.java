@@ -1,4 +1,4 @@
-package com.devepos.adt.extensions.internal.handler;
+package com.devepos.adt.utilities.internal.handler;
 
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;

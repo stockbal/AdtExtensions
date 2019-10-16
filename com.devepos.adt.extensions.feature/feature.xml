@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.devepos.adt.extensions"
-      label="ADT Extensions"
-      version="1.1.0.qualifier"
+      id="com.devepos.adt.utilities"
+      label="ADT Utilities"
+      version="1.0.0.qualifier"
       provider-name="devepos">
 
    <description>
-      Useful Extensions for ABAP Development Tools
-
+      Utilities for ABAP Development Tools
 - Command for cleaning the ADT Discovery cache
-- Command for executing Where-Used Queries for ABAP Development Objects without opening them in the editor
    </description>
 
    <license url="https://www.apache.org/licenses/LICENSE-2.0">
@@ -63,7 +61,7 @@ END OF TERMS AND CONDITIONS
    </license>
 
    <plugin
-         id="com.devepos.adt.extensions"
+         id="com.devepos.adt.utilities"
          download-size="0"
          install-size="0"
          version="0.0.0"
