@@ -2,7 +2,7 @@
 <feature
       id="com.devepos.adt.utilities"
       label="ADT Utilities"
-      version="1.0.0"
+      version="1.0.1"
       provider-name="devepos">
 
    <description>
